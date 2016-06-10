@@ -4,14 +4,20 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'stack-underflow',
     environment: environment,
-    baseURL: '/',
-    locationType: 'auto',
+    contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
+    // contentSecurityPolicy: {
+    //   'script-src': ''self' 'unsafe-eval' apis.google.com',
+    //   'frame-src': ''self' https://*.firebaseapp.com',
+    //   'connect-src': ''self' wss://*.firebaseio.com https://*.googleapis.com'
+    // },
     firebase: {
       apiKey: "AIzaSyDsxqEhn5YdRHW8Xrx-09gbSJNzDb78CzY",
       authDomain: "stack-underflow-e9bae.firebaseapp.com",
       databaseURL: "https://stack-underflow-e9bae.firebaseio.com",
       storageBucket: "",
-    }
+    },
+    baseURL: '/',
+    locationType: 'auto',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build

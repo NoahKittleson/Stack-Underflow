@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  showForm: false,
+  show: false,
   actions: {
     save() {
       var params = {
@@ -10,13 +10,14 @@ export default Ember.Component.extend({
         details: this.get('details') ? this.get('details') : "No details"
       };
       this.sendAction('save', params);
+      this.set("show", false);
       this.set('details', '');
       this.set('author', '');
       this.set('text', '');
-    }
-  },
+    },
 
-  showForm() {
-    this.set(this.showForm, true);
+    showForm() {
+      this.set("show", true);
+    }
   }
 });

@@ -1,0 +1,10 @@
+{ "questions": [{
+    "author": "Bob Dylan",
+    "text": "How many roads must a man walk down?",
+    "details": "(before he becomes a man)"
+  }, {
+    "author": "Mr. Dude",
+    "text": "Why isn't Firebase working?",
+    "details": "permission denied"
+  }]
+}

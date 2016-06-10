@@ -11,7 +11,7 @@ export default Ember.Route.extend({
         author: this.get("author") ? this.get("author") : "",
         text: this.get("text") ? this.get("text") : "",
         details: this.get("details") ? this.get("details") : ""
-      }
+      };
       this.sendAction('update', question, params);
       this.set('author', '');
       this.set('text', '');
@@ -19,7 +19,7 @@ export default Ember.Route.extend({
       this.set('showUpdateQuestion', false);
     },
     showUpdateForm() {
-      this.set(this.showUpdateQuestion, false);
+      this.set("showUpdateQuestion", true);
     }
   }
 });
