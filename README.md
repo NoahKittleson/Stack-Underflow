@@ -1,7 +1,7 @@
-# Stack-underflow
+#_README for Stack-underflow_#
+###Created by Noah Kittleson###
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is an Ember app where users may submit questions for other users to answer.  Questions are all displayed on the homepage, with each one having a link to their their own page where you can see their answers.
 
 ## Prerequisites
 
@@ -15,7 +15,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone https://github.com/NoahKittleson/Stack-Underflow` this repository
 * change into the new directory
 * `npm install`
 * `bower install`
@@ -43,7 +43,7 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 Specify what it takes to deploy your app.
 
-## Further Reading / Useful Links
+## Further Reading / Useful Links on Ember
 
 * [ember.js](http://emberjs.com/)
 * [ember-cli](http://ember-cli.com/)
@@ -51,3 +51,16 @@ Specify what it takes to deploy your app.
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
+##**Technologies Used**
+* HTML
+* CSS
+* BootStrap
+* JavaScript
+* Bower
+* Node Package Manager
+* Ember
+* Firebase
+
+
+##**Licensing**##
+This is protected under the [MIT](https://en.wikipedia.org/wiki/MIT_License) license.
