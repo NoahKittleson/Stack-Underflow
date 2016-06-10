@@ -1,0 +1,6 @@
+{{#each model as |question|}}
+  <div class="container">
+    <h4>{{question.author}} asked:</h4>
+    <p>{{#link-to 'full-question' question.id}}{{question.text}}{{/link-to}}</p>
+  </div>
+{{/each}}
