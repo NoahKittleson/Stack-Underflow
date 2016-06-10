@@ -1,1 +1,10 @@
-{{outlet}}
+<div class="container">
+  <h4>{{question.author}} asked:</h4>
+  <p>{{question.text}}</p>
+  <p>{{question.details}}</p>
+</div>
+<ul>
+  {{#each question.answers as |answer|}}
+    <li>{{answer.text}} -{{answer.author}}</li>
+  {{/each}}
+</ul>
