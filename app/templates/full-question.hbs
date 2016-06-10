@@ -25,12 +25,14 @@
     </form>
   </div>
 {{else}}
-  <button{{action 'showUpdateForm' question}}>Edit</button>
+  <button{{action 'showUpdateForm' model}}>Edit</button>
 {{/if}}
+
+{{new-answer question=model save="saveAnswer"}}
 
 
 <ul>
-  {{#each question.answers as |answer|}}
+  {{#each model.answers as |answer|}}
     <li>{{answer.text}} -{{answer.author}}</li>
   {{/each}}
 </ul>
