@@ -32,7 +32,7 @@ export default Ember.Route.extend({
         }
       });
       answer.save();
-      this.transitionTo('index');   //change to full-question eventually
+      this.transitionTo('full-question', answer.get('question.id'));
     }
   }
 });
