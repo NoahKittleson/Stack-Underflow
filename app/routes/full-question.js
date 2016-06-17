@@ -1,7 +1,6 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  //showUpdateForm: false,  //fuck, I have put this into a component...
   model(params) {
     return this.store.findRecord('question', params.question_id);
   },
