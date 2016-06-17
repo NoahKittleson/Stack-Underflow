@@ -7,7 +7,6 @@ export default Ember.Component.extend({
         upvotes: answer.get('upvotes') + 1,
       };
       console.log("upvotes: " + params.upvotes + " in components/answer-list.js");
-      console.log("answer: " + answer + " in components/answer-list.js");
       this.sendAction('upvote', params, answer);
     },
     downvote(answer) {
