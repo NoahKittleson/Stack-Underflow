@@ -1,6 +1,13 @@
 {{#each model as |question|}}
   <div class="container">
-    <h4>{{question.author}} asked:</h4>
-    <p>{{#link-to 'full-question' question.id}}{{question.text}}{{/link-to}}</p>
+    <div class="row">
+      <div class="col-xs-8">
+        <h4>{{question.author}} asked:</h4>
+        <p>{{#link-to 'full-question' question.id}}{{question.text}}{{/link-to}}</p>      
+      </div>
+      <div class="col-xs-4">
+        {{ answered question }}
+      </div>
+    </div>
   </div>
 {{/each}}
