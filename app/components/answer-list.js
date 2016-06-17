@@ -8,7 +8,7 @@ export default Ember.Component.extend({
     upvote(params, answer) {
       this.sendAction('upvote', params, answer);
     },
-    downvote(answer) {
+    downvote(params, answer) {
       this.sendAction('downvote', params, answer);
     }
   }

@@ -1,6 +1,10 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  netVote: Ember.computed('answer.upvotes', 'answer.downvotes', function() {
+    return this.get('answer.upvotes') - this.get('answer.downvotes');
+  }),
+
   actions: {
     upvote(answer) {
       var params = {
