@@ -23,6 +23,16 @@ export default Ember.Route.extend({
       });
       question.save();
       this.transitionTo('full-question', question.id);
+    },
+    updateAnswer(params, answer) {
+      //console.log("answer: " + answer + " in routes/full-question.js");
+      Object.keys(params).forEach(function(key) {
+        if (params[key]!==undefined) {
+          answer.set(key,params[key]);
+        }
+      });
+      answer.save();
+      this.transitionTo('index');   //change to full-question eventually
     }
   }
 });

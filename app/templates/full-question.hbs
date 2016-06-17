@@ -8,7 +8,5 @@
 
 
 <ul>
-  {{#each model.answers as |answer|}}
-    <li>{{answer.text}} -{{answer.author}}</li>
-  {{/each}}
+  {{answer-list answers=model.answers upvote="updateAnswer" downvote="updateAnswer"}}
 </ul>
