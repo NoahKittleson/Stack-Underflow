@@ -1,1 +1,16 @@
-{{yield}}
+<li>
+  <div class="row">
+    <div class="col-xs-8">
+      {{answer.text}}
+    </div>
+    <div class="col-sx-2">
+      <span class="glyphicon glyphicon-thumbs-up" {{action 'upvote' answer}}></span>
+      <span class="glyphicon glyphicon-thumbs-down" {{action 'downvote' answer}}></span>
+      <br>
+      {{ totalVote answer }}
+    </div>
+  </div>
+  <div class="col-xs-offset-6">
+    -{{answer.author}}
+  </div>
+</li>

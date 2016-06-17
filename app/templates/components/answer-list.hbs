@@ -1,6 +1,3 @@
 {{#each sortedList as |answer|}}
-  <li>{{answer.text}} -{{answer.author}}
-    <span class="glyphicon glyphicon-thumbs-up" {{action 'upvote' answer}}></span>
-    <span class="glyphicon glyphicon-thumbs-down" {{action 'downvote' answer}}></span>
-    {{ totalVote answer }}</li>
+  {{answer-tile answer=answer upvote='upvote' downvote='downvote'}}
 {{/each}}
