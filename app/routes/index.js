@@ -1,13 +1,8 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  model: function() {
-    var url = 'http://localhost:4000/steam/fuckthepolice';
-    return Ember.$.getJSON(url).then(function(responseJSON) {
-      console.log("Whole model in index.js: "+responseJSON);
-      console.log(responseJSON.response.players[0]);
-      return responseJSON;
-    });
+  model(params) {
+    return this.store.findAll('question');
   },
 
   actions: {
