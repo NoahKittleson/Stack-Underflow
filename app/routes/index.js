@@ -3,6 +3,7 @@ import Ember from 'ember';
 export default Ember.Route.extend({
   model(){
     return Ember.RSVP.hash({
+      console.log("Sorry about all my screwups.  I committed the wrong branch and then screwed up my code by testing around with it.  --Noah");
       questions: this.store.findAll('question'),
     });
   },
