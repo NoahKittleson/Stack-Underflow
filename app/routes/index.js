@@ -2,9 +2,9 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model(){
+    console.log("Sorry about all my screwups.  I committed the wrong branch and then screwed up my code by testing around with it.  --Noah");
     return Ember.RSVP.hash({
-      console.log("Sorry about all my screwups.  I committed the wrong branch and then screwed up my code by testing around with it.  --Noah");
-      questions: this.store.findAll('question'),
+      questions: this.store.findAll('question')
     });
   },
   actions: {
